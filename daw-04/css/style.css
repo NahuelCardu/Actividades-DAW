@@ -1,0 +1,151 @@
+/* Estilos generales */
+
+body {
+    background: #fff;
+    color: #111;
+    font-family: MajritTx, serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    position: sticky;
+    background-color: #ffffffec;
+    color: #000000;
+    padding: 10px;
+  }
+  
+  .header {
+    position: sticky;
+    display: flex;
+    top: 0; /* Fija el encabezado en la parte superior de la ventana */
+    z-index: 1000; /* Asegura que el encabezado esté por encima del contenido */
+
+  }
+  
+  .header h1 {
+    margin: 0; /* Elimina el margen predeterminado */
+  }
+  
+  .header h2 {
+    margin: 0 auto; /* Centra horizontalmente */
+  }
+  .menu-hamburguesa {
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    margin: 5px;
+  }
+  .menu-hamburguesa span {
+    background-color: #333;
+    display: block;
+    width: 30px;
+    height: 5px;
+    margin-bottom: 5px;
+  }
+  .form {
+    margin-left: auto; /* Mueve el div a la derecha */
+  }
+
+  .form button {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 5px 20px;
+    cursor: pointer;
+  }
+
+  /* Cambio de color cuando se le da clic */
+  .form button:active {
+    background-color: darkorange;
+  }
+  article {
+    padding: 20px;
+  }
+  
+  section {
+    margin-top: 20px;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  footer p {
+    margin: 5px 0;
+  }
+  
+  footer nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  footer nav ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  footer nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Estilos específicos para la noticia */
+  
+  article img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+  }
+  
+  blockquote {
+    background-color: #f9f9f9;
+    border-left: 10px solid #ccc;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  blockquote p {
+    margin: 0;
+  }
+  
+  .autor-cita {
+    margin-top: 10px;
+  }
+  
+  .autor-cita h3 {
+    margin: 0;
+  }
+  
+  /* Estilos para dispositivos móviles */
+  
+  @media only screen and (max-width: 600px) {
+    header {
+      padding: 10px;
+    }
+    
+    header h1 {
+      font-size: 1.5em;
+    }
+    
+    header h2 {
+      font-size: 1em;
+    }
+    
+    article {
+      padding: 10px;
+    }
+    
+    footer {
+      padding: 10px;
+    }
+    
+    footer nav ul li {
+      display: block;
+      margin-bottom: 5px;
+    }
+  }
+  
