@@ -1,0 +1,83 @@
+/* Estilos generales */
+body{
+  background-color: rgb(164, 255, 255);
+}
+
+.header{
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+  color: rgb(255, 255, 255);
+}
+.header .navbar ul {
+  list-style-type: none; /* Quitamos los puntos de la lista */
+  padding: 0; /* Quitamos el relleno predeterminado */
+  margin: 0; /* Quitamos el margen predeterminado */
+}
+
+.header .navbar ul li {
+  display: inline; /* Hacemos que los elementos de la lista sean en línea */
+  margin-right: 10px; /* Agregamos un margen derecho entre elementos */
+}
+
+.header .navbar ul li a {
+  text-decoration: none; /* Quitamos el subrayado de los enlaces */
+  color: rgb(255, 255, 255); /* Color del texto */
+}
+
+/* Opcional: Estilos cuando el ratón pasa por encima */
+.header .navbar ul li a:hover {
+  color: rgb(0, 255, 234); /* Cambia el color del texto cuando el ratón pasa por encima */
+}
+.navbar{
+  align-content: center;
+}
+
+
+/* Estilos para las secciones */
+section {
+  margin: 20px;
+}
+
+section h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+section article {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section article img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+section article h3 {
+  color: #333;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+section article p {
+  color: #666;
+}
+
+/* Estilos específicos para la disposición de las secciones */
+.container {
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-direction: column; /* Agregamos flex-direction: column */
+}
+/* Estilos para las secciones en pantallas pequeñas */
+@media screen and (max-width: 768px) {
+  .container {
+      justify-content: center;
+  }
+}
